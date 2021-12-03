@@ -107,7 +107,7 @@ const ApprovalForm: React.FC<Props> = ({ request, email, onHighlightClick }) => 
                   {highlight.type === 'TEXT' ? (
                     <Typography.Text ellipsis>{content}</Typography.Text>
                   ) : (
-                    <img src={content} />
+                    <img src={content} className={styles['highlight-list-item-content-image']} />
                   )}
                 </div>
 
@@ -119,7 +119,10 @@ const ApprovalForm: React.FC<Props> = ({ request, email, onHighlightClick }) => 
                   />
                 )}
                 {request.reviewedAt && (
-                  <Typography.Text type={highlight.status === 'APPROVED' ? 'success' : 'danger'}>
+                  <Typography.Text
+                    type={highlight.status === 'APPROVED' ? 'success' : 'danger'}
+                    className={styles['highlight-list-item-decision']}
+                  >
                     {`${highlight.status?.slice(0, 1)}${highlight.status?.slice(1).toLowerCase()}`}
                   </Typography.Text>
                 )}

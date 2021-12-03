@@ -10,6 +10,15 @@
   cursor: pointer;
 }
 
+.highlight-list-item-content-image {
+  max-width: 100%;
+}
+
 .highlight-list-item-select {
   max-width: 100px;
+}
+
+.highlight-list-item-decision {
+  min-width: 80px;
+  padding-left: 16px;
 }
