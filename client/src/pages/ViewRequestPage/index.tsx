@@ -49,7 +49,10 @@ const ViewRequestPage: React.FC = () => {
       setLoading(false);
     }
   }, [id, searchParams]);
-  const onHighlightClick = useCallback((index: number) => scrollToRef.current?.(transformedHighlights[index]), []);
+  const onHighlightClick = useCallback(
+    (index: number) => scrollToRef.current?.(transformedHighlights[index]),
+    [transformedHighlights],
+  );
 
   useEffect(() => {
     document.title = 'View Request';
