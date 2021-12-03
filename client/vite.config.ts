@@ -17,9 +17,6 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-    preview: {
-      port: Number(process.env.PORT) ?? 5000
-    },
     resolve: {
       alias: [{ find: /^@(?=\/)/, replacement: path.resolve(__dirname, './src') }],
     },

@@ -28,7 +28,6 @@ Prepare `.env` with below variables
 
 ```
 VITE_BACKEND_BASE_URL=
-PORT=
 ```
 
 Execute below commands to start with Docker
@@ -36,7 +35,7 @@ Execute below commands to start with Docker
 ```
 cd client
 docker build . -t naf-client
-docker run -p {port in env}:{port in env} naf-client
+docker run -p 5000:5000 naf-client
 ```
 
 Due to some bugs from external library, it is not able to build, used development mode instead

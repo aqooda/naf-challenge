@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview --host"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
