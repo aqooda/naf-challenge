@@ -1,0 +1,27 @@
+.layout {
+  width: 100vw;
+  min-width: 1200px;
+  height: 100vh;
+  display: flex;
+}
+
+.pdf-viewer {
+  flex: 1;
+  height: 100%;
+  background-color: #d9d9d9;
+  position: relative;
+}
+
+.pdf-reminder {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.request-form-wrapper {
+  width: 55%;
+  height: 100%;
+  padding: 16px;
+  overflow-y: auto;
+}

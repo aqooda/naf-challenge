@@ -1,0 +1,11 @@
+.highlight-list-item-order {
+  text-align: right;
+  min-width: 24px;
+  margin-right: 12px;
+}
+
+.highlight-list-item-content {
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+}
